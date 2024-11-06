@@ -1,0 +1,87 @@
+ul {list-style-type: none;}
+a {text-decoration: none;}
+body {color: var(--black);}
+:root {
+  --dark-green: rgba(70, 89, 41, 1);
+  --main-broun: rgb(114, 127, 91);
+  --main-green-color: rgba(129, 155, 87, 1);
+  --second-green-color: rgb(117, 158, 53);
+  --third-green-color: rgb(105, 169, 2);
+  --main-gradient: linear-gradient(
+    45deg,
+    var(--main-green-color),
+    var(--second-green-color)
+  );
+  --revers-main-gradient: linear-gradient(
+    45deg,
+    var(--second-green-color),
+    var(--main-green-color)
+  );
+  --second-gradient: linear-gradient(
+    45deg,
+    var(--main-green-color),
+    var(--third-green-color)
+  );
+  --revers-second-gradient: linear-gradient(
+    45deg,
+    var(--third-green-color),
+    var(--main-green-color)
+  );
+  --white: rgba(250, 244, 234, 1);
+  --black: rgba(49, 38, 26, 1);
+  /* fonts */
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Gilroy", sans-serif;
+}
+/* >>> MAIN PAGE */
+.button {
+  border: 2px solid var(--main-broun);
+  border-radius: 8px;
+  padding: 16px 32px;
+  background: var(--second-gradient);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
+  transition: 0.8;
+
+}
+.button:hover,
+.button:focus {
+  background: transparent;
+  color: var(--dark-green);
+  transition: 0.8;
+
+}
+.header-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--black);
+  transition: 0.8;
+}
+.header-link:hover {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: var(--main-green-color);
+  transition: 0.8;
+
+}
+.hero-title {
+    color: var(--white);
+}
+.hero-title .accent {color: var(--main-green-color);}
+
+/* <<< MAIN PAGE */
+/* >>> ADVANTAGES */
+.advantages-list {
+    background-color: var(--main-green-color);
+    color: var(--white);
+}
+/* <<< ADVANTAGES */
